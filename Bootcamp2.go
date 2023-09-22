@@ -2,21 +2,28 @@ package main
 
 import "fmt"
 
-func selectionSort(arr []int) {
-	for i := 0; i < len(arr)-1; i++ {
-		minIndex := i
-		for j := i + 1; j < len(arr); j++ {
-			if arr[minIndex] < arr[j] {
-				minIndex = j
+func bubbleSort(arr []int) {
+	n := len(arr)
+	for i := 0; i < n-1; i++ {
+		for j := 0; j < n-i-1; j++ {
 
+			fmt.Println(arr)
+			fmt.Println("Element yang ditukar yaitu ", arr[j], "dengan", arr[j+1])
+			//elemeent di bawah
+			if arr[j] > arr[j+1] {
+				//yang jadi dari gede ke kecil ato kecil ke gede itu diatas tanda lebih darinya:)))))))))))))
+				arr[j], arr[j+1] = arr[j+1], arr[j]
+
+			} else {
+				fmt.Println("tidak ada pennukaran ")
 			}
 		}
-
 	}
 }
+
 func main() {
-	arr := []int{10, 7, 34, 97, 2, 43, 23, 13, 9, 1}
-	selectionSort(arr)
+	arr := []int{20, 14, 17, 47, 3, 53, 73, 63, 29, 1}
+	bubbleSort(arr)
 	for i := 0; i < len(arr); i++ {
 		fmt.Print(arr[i], " ")
 	}
