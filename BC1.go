@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	sisip := 4
 	luasp := sisip * 4
-	fmt.Println("luas lingkaran adalah", luasp)
+	fmt.Println("luas persegi adalah", luasp)
 
 	alas := 4
 	tinggi := 6
@@ -15,7 +15,7 @@ func main() {
 	rusukl := 7.0
 	π := 3.14
 	luasling := rusukl * rusukl * π
-	fmt.Println("luas lingkatan adalah", luasling)
+	fmt.Println("luas lingkaran adalah", luasling)
 
 	massa := 10.0
 	gravitasi := 10.0
@@ -41,7 +41,7 @@ func main() {
 	celcius := 50
 	Kelvin := celcius + 273
 	reamur := celcius * 4 / 5
-	fahrenheit := celcius*9/5 + 2
+	fahrenheit := celcius*9/5 + 32
 
-	println("suhu", "c", celcius, "k", Kelvin, "k", reamur, "f", fahrenheit)
+	println("suhu", "c", celcius, "k", Kelvin, "r", reamur, "f", fahrenheit)
 }
